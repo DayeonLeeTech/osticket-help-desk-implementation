@@ -103,3 +103,33 @@ With the infrastructure stable, the focus shifted to configuring the business lo
 </p>
 
 ---
+## Part 4: Ticket Lifecycle & Operational Workflow
+This phase demonstrates the practical application of the help desk system. I simulated a live environment to manage the complete lifecycle of a support request, from initial user intake to final resolution and audit.
+
+### 1. Ticket Intake & Priority Assessment
+* **User Submission:** Simulated an end-user submitting a high-priority incident. The system utilized the pre-configured **Help Topics** to categorize the request automatically.
+* **Severity Classification:** Evaluated the impact (e.g., "Entire Department Offline") to assign **Severity-A** or **Severity-B** status, triggering the appropriate SLA response.
+
+<p align="center">
+  <img src="assets/ticket-intake-priority-assessment.png" width="800" alt="Ticket Intake" />
+  <br>
+  <i>Figure 7: End-user submission showing automated intake and priority categorization.</i>
+</p>
+
+### 2. Resolution & Audit Trail
+* **Lifecycle Documentation:** For both **Sev-A** and **Sev-B** incidents, a strict audit trail was maintained. This includes tracking the time from "Open" to "Resolved" and documenting every agent action in the ticket thread.
+* **Resolution Confirmation:** Formally closed the tickets once the simulated issue was resolved, providing the user with a clear summary of the fix and ensuring the status was updated in the system.
+
+<p align="center">
+  <img src="assets/sev-a-resolution.png"width="800" alt="Severity A Resolution" />
+  <br>
+  <i>Figure 8: Audit trail for a Severity-A (Critical) incident, showing rapid response and resolution.</i>
+</p>
+
+<p align="center">
+  <img src="assets/sev-b-resolution.png"width="800" alt="Severity B Resolution" />
+  <br>
+  <i>Figure 9: Documenting the lifecycle of a Severity-B (High) ticket through to successful closure.</i>
+</p>
+
+---
