@@ -98,32 +98,41 @@ With the infrastructure stable, the focus shifted to configuring the business lo
 
 ---
 ## Part 4: Ticket Lifecycle & Operational Workflow
-This phase demonstrates the practical application of the help desk system. I simulated a live environment to manage the complete lifecycle of a support request, from initial user intake to final resolution and audit.
+This phase demonstrates the practical application of the osTicket platform. A live environment was simulated to manage the complete lifecycle of support requests, encompassing initial intake, triage, and final resolution.
 
-### 1. Ticket Intake & Priority Assessment
-* **User Submission:** Simulated an end-user submitting a high-priority incident. The system utilized the pre-configured **Help Topics** to categorize the request automatically.
-* **Severity Classification:** Evaluated the impact (e.g., "Entire Department Offline") to assign **Severity-A** or **Severity-B** status, triggering the appropriate SLA response.
+### 1. Ticket Intake & Manual Priority Assessment
+* **Incident Creation:** Multiple support requests were generated using various Help Topics to validate the system’s intake capabilities and routing logic.
+* **Triage & Classification:** Incidents were manually evaluated based on business impact (e.g., "Entire Department Offline"). Priority levels were re-assigned to the appropriate **Severity** tiers and **SLA Plans** to ensure alignment with corporate response standards.
 
 <p align="center">
-  <img src="assets/ticket-intake-priority-assessment.png" width="800" alt="Ticket Intake" />
+  <img src="assets/ticket-intake-priority-assessment.png" width="800"  alt="Ticket Intake" />
   <br>
-  <i>Figure 7: End-user submission showing automated intake and priority categorization.</i>
+  <i>Figure 7: Manual triage process to assign appropriate priority levels and SLA plans.</i>
 </p>
 
-### 2. Resolution & Audit Trail
-* **Lifecycle Documentation:** For both **Sev-A** and **Sev-B** incidents, a strict audit trail was maintained. This includes tracking the time from "Open" to "Resolved" and documenting every agent action in the ticket thread.
-* **Resolution Confirmation:** Formally closed the tickets once the simulated issue was resolved, providing the user with a clear summary of the fix and ensuring the status was updated in the system.
+### 2. Resolution & Audit Trail Management
+* **Lifecycle Documentation:** Comprehensive audit trails were maintained for both **Sev-A** and **Sev-B** incidents. This involved manual updates to ticket statuses, the inclusion of internal troubleshooting notes, and documented communication with the end-user.
+* **Operational Closure:** Formal resolution was achieved by documenting the fix within the ticket thread and transitioning the status to "Resolved," ensuring the support loop was successfully closed.
 
 <p align="center">
-  <img src="assets/sev-a-resolution.png"width="800" alt="Severity A Resolution" />
+  <img src="assets/sev-a-resolution.png" width="800"  alt="Severity A Resolution" />
   <br>
-  <i>Figure 8: Audit trail for a Severity-A (Critical) incident, showing rapid response and resolution.</i>
+  <i>Figure 8: Audit trail for a Severity-A (Critical) incident, detailing agent actions and resolution steps.</i>
 </p>
 
 <p align="center">
-  <img src="assets/sev-b-resolution.png"width="800" alt="Severity B Resolution" />
+  <img src="assets/sev-b-resolution.png" width="800" alt="Severity B Resolution" />
   <br>
-  <i>Figure 9: Documenting the lifecycle of a Severity-B (High) ticket through to successful closure.</i>
+  <i>Figure 9: Audit trail for a Severity-B (High) incident, detailing agent actions and resolution steps</i>
 </p>
 
 ---
+
+## Project Outcome & Core Technical Competencies
+The project successfully established a production-ready IT Service Management (ITSM) environment within Microsoft Azure. By the conclusion of the lab, a fully functional help desk was deployed, featuring a secured "WIMP" stack, automated departmental routing, and a rigorously documented ticket lifecycle.
+
+### Core Technical Competencies
+* **Full-Stack Application Deployment:** Practical experience provisioning and managing the interdependencies of the "WIMP" stack (Windows, IIS, MySQL, PHP) to host enterprise-grade web applications.
+* **ITSM Workflow Architecture:** Expertise in translating organizational requirements into functional help desk logic, including the configuration of Service Level Agreements (SLAs), Departmental hierarchies, and Help Topic categorization.
+* **Access Control & Security Governance:** Implementation of the "Principle of Least Privilege" through the management of NTFS file system permissions and the enforcement of Role-Based Access Control (RBAC) for various user tiers.
+* **Incident Lifecycle Management:** Development of a "Support Lead" mindset by manually triaging, prioritizing, and documenting the end-to-end lifecycle of critical (Sev-A) and high-priority (Sev-B) incidents.
