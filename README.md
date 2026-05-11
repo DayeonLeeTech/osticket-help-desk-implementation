@@ -78,3 +78,28 @@ This phase involved the deployment of the osTicket source code and the critical 
 </p>
 
 ---
+
+## Part 3: Help Desk Configuration & Organizational Logic
+With the infrastructure stable, the focus shifted to configuring the business logic of the help desk. This phase involved setting up the organizational hierarchy and support workflows required for a professional IT environment.
+
+### 1. Departmental Hierarchy & Routing
+* **Organizational Structure:** Created distinct departments such as **Support**, **Maintenance**, and **Support/SysAdmins**. This ensures that incoming tickets are automatically funneled to the specialized teams responsible for those specific assets.
+* **Help Topics:** Established a menu of specific "Help Topics" (e.g., Password Reset, Equipment Malfunction) to streamline the intake process and ensure the system captures the correct data at the point of submission.
+
+<p align="center">
+  <img src="assets/osticket-department-config.png" width="800" alt="Department Configuration" />
+  <br>
+  <i>Figure 5: Configuring the departmental structure and routing rules within the Admin Panel.</i>
+</p>
+
+### 2. Service Level Agreements (SLAs) & User Management
+* **SLA Policies:** Defined Service Level Agreements (SLAs) to set expectations for response and resolution times. This included setting "Grace Periods" to ensure accountability and track system performance.
+* **Role-Based Access:** Configured profiles for **Agents** (technicians) and **Users** (customers), simulating a multi-user corporate environment where permissions and visibility are restricted based on roles.
+
+<p align="center">
+  <img src="assets/osticket-sla-policies.png" width="800"  alt="SLA Policies" />
+  <br>
+  <i>Figure 6: Implementing SLA policies to define priority levels and resolution deadlines.</i>
+</p>
+
+---
