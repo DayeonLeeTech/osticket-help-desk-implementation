@@ -1,5 +1,5 @@
 
-# osTicket Help Desk: Ticketing System Implementation & Lifecycle (Azure)
+# osTicket Help Desk: Ticketing System Implementation & Lifecycle
 
 ![Azure](https://img.shields.io/badge/microsoft%20azure-%230072C6.svg?style=for-the-badge&logo=microsoft-azure&logoColor=white)
 ![IT Support](https://img.shields.io/badge/IT_Support-Help_Desk-blue?style=for-the-badge&logo=it-support&logoColor=white)
