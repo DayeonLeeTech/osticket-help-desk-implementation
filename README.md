@@ -56,3 +56,25 @@ The objective of this phase was to deploy a virtual machine in Azure and configu
 </p>
 
 ---
+
+## Part 2: Application Installation & Security Configuration
+This phase involved the deployment of the osTicket source code and the critical configuration of the application environment to ensure security and stability.
+
+### 1. File System & Permission Management
+* **Installation Path:** Deployed the osTicket source files to the standard IIS web root (`C:\inetpub\wwwroot`).
+* **Configuration Security:** Renamed the sample configuration file to `ost-config.php`. To facilitate the installation, I temporarily modified **NTFS permissions** by disabling inheritance and granting "Everyone" Full Control, later reverting these to "Read-Only" to secure the database credentials once setup was complete.
+
+### 2. Resolving Application Dependencies
+* **PHP Extension Management:** Identified missing dependencies during the initial web-based setup. Used IIS PHP Manager to manually enable `php_imap.dll`, `php_intl.dll`, and `php_opcache.dll`, ensuring the platform could handle email fetching and internationalization.
+
+### 3. Finalizing Implementation
+* **Web-Based Installation:** Completed the osTicket setup wizard by linking the MySQL database and defining the administrative account.
+* **Post-Install Hygiene:** Removed the `/setup` directory from the server to prevent unauthorized reconfiguration, a standard security best practice.
+
+<p align="center">
+  <img src="assets/osticket-install-complete.png" width="800" height="600" alt="osTicket Installation Complete" />
+  <br>
+  <i>Figure 4: The successful completion of the osTicket installation, confirming a functional link between the web server and the database.</i>
+</p>
+
+---
