@@ -128,7 +128,7 @@ This phase demonstrates the practical application of the osTicket platform. A li
 
 ---
 
-## Project Outcome & Core Technical Competencies
+## Project Outcome & Key Takeaways
 The project successfully established a production-ready IT Service Management (ITSM) environment within Microsoft Azure. By the conclusion of the lab, a fully functional help desk was deployed, featuring a secured "WIMP" stack, automated departmental routing, and a rigorously documented ticket lifecycle.
 
 ### Core Technical Competencies
@@ -136,3 +136,9 @@ The project successfully established a production-ready IT Service Management (I
 * **ITSM Workflow Architecture:** Expertise in translating organizational requirements into functional help desk logic, including the configuration of Service Level Agreements (SLAs), Departmental hierarchies, and Help Topic categorization.
 * **Access Control & Security Governance:** Implementation of the "Principle of Least Privilege" through the management of NTFS file system permissions and the enforcement of Role-Based Access Control (RBAC) for various user tiers.
 * **Incident Lifecycle Management:** Development of a "Support Lead" mindset by manually triaging, prioritizing, and documenting the end-to-end lifecycle of critical (Sev-A) and high-priority (Sev-B) incidents.
+
+### Key Takeaways
+* **Infrastructure Interdependence:** Gained a deep understanding of how web servers (IIS), databases (MySQL), and application code (PHP) must be precisely synchronized to provide a stable service environment.
+* **Operational Triage:** Developed the ability to evaluate business impact and urgency, moving beyond technical resolution to strategic ticket prioritization.
+* **Documentation as a Standard:** Recognized the critical importance of a clear audit trail; every internal note and status change serves as a vital record for both team collaboration and future troubleshooting.
+* **Security Discipline:** Practiced essential post-installation hygiene, such as removing setup directories and tightening file permissions, to protect administrative credentials and system integrity.
